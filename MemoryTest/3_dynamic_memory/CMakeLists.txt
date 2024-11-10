@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.10)
+project(MemoryTest3DynamicMemory)
+
+# Add the executable
+add_executable(mem mem.c measure.c sampler.c)
+add_executable(mem2 mem2.c measure.c sampler.c)
+
+# Include necessary directories
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Link necessary libraries
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+target_link_libraries(mem ${SDL2_LIBRARIES})
+target_link_libraries(mem2 ${SDL2_LIBRARIES})

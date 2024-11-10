@@ -101,7 +101,7 @@ int main(int argc, char** argv) {
 
 	int numThreads;
 	printf("Enter the number of threads to create: ");
-	scanf_s("%d", &numThreads);
+	scanf("%d", &numThreads);
 
 	vector<thread> threads;
 	int chunkSize = MAXR / numThreads;

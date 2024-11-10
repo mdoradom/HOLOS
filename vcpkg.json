@@ -1,0 +1,9 @@
+{
+  "name" : "holos",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "3d89599850c8168fa4b560367b06c1be52645b20",
+  "dependencies" : [ {
+    "name" : "sdl2",
+    "version>=" : "2.30.7"
+  } ]
+}

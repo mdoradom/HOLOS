@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 
 	int numThreads;
 	printf("Enter the number of threads to create: ");
-	scanf_s("%d", &numThreads);
+	scanf("%d", &numThreads);
 
 	vector<SDL_Thread*> threads(numThreads);
 

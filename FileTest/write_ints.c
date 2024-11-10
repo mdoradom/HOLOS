@@ -18,7 +18,7 @@ int main() {
         for (int i = 0; i < 10; i++) {
 
             printf("Enter an integer: ");
-            scanf_s("%d", &ints[i]);
+            scanf("%d", &ints[i]);
         
         }
 

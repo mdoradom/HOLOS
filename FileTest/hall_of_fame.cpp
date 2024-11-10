@@ -74,13 +74,14 @@ int main(int argc, char* argv[]) {
     int score;
 
     printf("Enter a name: ");
-    scanf_s("%s", name, sizeof(name));
+    scanf("%s", name, sizeof(name));
 
     printf("Enter a score: ");
-    scanf_s("%d", &score);
+    scanf("%d", &score);
 
     struct Player new_player;
-    strncpy_s(new_player.name, sizeof(new_player.name), name, _TRUNCATE);
+    strncpy(new_player.name, name, sizeof(new_player.name) - 1);
+new_player.name[sizeof(new_player.name) - 1] = '\0';
     new_player.score = score;
 
     players[num_players] = new_player;
